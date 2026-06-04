@@ -30,7 +30,7 @@ jobs:
           echo "Tailscale VPS ready!"
           echo "IP: ${{ env.TAILSCALE_IP }}"
           echo "User: root"
-          echo "Pass: admin@123"
+          echo "Pass: admin@1234"
 
       - name: Keep VPS Alive
         run: |
