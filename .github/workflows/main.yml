@@ -15,7 +15,7 @@ jobs:
           echo "root:admin@123" | sudo chpasswd
           echo "PermitRootLogin yes" | sudo tee -a /etc/ssh/sshd_config
           sudo service ssh restart
-          echo "SSH user: root | pass: admin@1373"
+          echo "SSH user: root | pass: admin@123"
 
       - name: Install Tailscale
         run: |
@@ -30,7 +30,7 @@ jobs:
           echo "Tailscale VPS ready!"
           echo "IP: ${{ env.TAILSCALE_IP }}"
           echo "User: root"
-          echo "Pass: admin@1234"
+          echo "Pass: admin@123"
 
       - name: Keep VPS Alive
         run: |
