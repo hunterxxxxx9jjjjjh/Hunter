@@ -15,7 +15,7 @@ jobs:
           echo "root:admin@123" | sudo chpasswd
           echo "PermitRootLogin yes" | sudo tee -a /etc/ssh/sshd_config
           sudo service ssh restart
-          echo "SSH user: root | pass: admin@123"
+          echo "SSH user: root | pass: admin@1373"
 
       - name: Install Tailscale
         run: |
